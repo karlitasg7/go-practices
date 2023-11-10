@@ -34,6 +34,14 @@ func sum(nums ...int) int {
 	return total
 }
 
+func factorial(num int) int {
+	if num == 0 {
+		return 1
+	}
+
+	return num * factorial(num-1)
+}
+
 func main() {
 	fmt.Println("Hello, World!")
 
@@ -67,5 +75,6 @@ func main() {
 	fmt.Println(Friday)
 
 	fmt.Println(sum(1, 2, 3, 4, 5))
+	fmt.Println(factorial(5))
 
 }
