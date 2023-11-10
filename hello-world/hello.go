@@ -81,4 +81,10 @@ func main() {
 		fmt.Println("Hello, World from anonim!")
 	}()
 
+	greeting := func(name string) {
+		fmt.Printf("Hello, World from anonim %s!\n", name)
+	}
+
+	greeting("Karla")
+
 }
