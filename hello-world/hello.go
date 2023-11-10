@@ -77,4 +77,8 @@ func main() {
 	fmt.Println(sum(1, 2, 3, 4, 5))
 	fmt.Println(factorial(5))
 
+	func() {
+		fmt.Println("Hello, World from anonim!")
+	}()
+
 }
