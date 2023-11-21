@@ -1,0 +1,42 @@
+{{ template "base" . }}
+
+{{ define "title" }}New Game{{ end }}
+
+{{ define "content" }}
+
+<section class="container py-5">
+
+  <h2 class="mb-4">Instructions</h2>
+
+  <ol>
+    <li>Enter your name and clic on Start the game</li>
+    <li>Choose one of the three options: rock, paper or scissors</li>
+    <li>Wait for the computer to choose</li>
+    <li>See the result</li>
+  </ol>
+
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="row">
+      <h2 class="text-center py-4">Enter your name</h2>
+
+      <form action="/game" method="post">
+        <div class="mb-3">
+          <input type="text" required placeholder="Enter your name" name="name" id="name" class="form-control">
+
+        </div>
+
+        <div class="d-grid gap-2 py-4">
+          <button type="submit" class="btn btn-success btn-lg">Start the game</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
